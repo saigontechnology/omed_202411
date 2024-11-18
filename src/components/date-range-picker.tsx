@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { addDays, format } from "date-fns";
+import { format } from "date-fns";
 import { DateRange } from "react-day-picker";
 
 import { cn } from "@/lib/utils";
@@ -36,8 +36,6 @@ export function DatePickerWithRange({
       onRangeChange(selectedRange); // Notify parent component of changes
     }
   };
-
-  const test = [new Date("2024-11-01"), new Date()];
 
   return (
     <div className={cn("grid gap-2", className)}>
